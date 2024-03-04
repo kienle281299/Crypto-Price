@@ -27,6 +27,9 @@
         width: 100%;
         background-color: white;
         display: none;
+        overflow:hidden; 
+        overflow-y:scroll;
+        height: 175px;
         .listCoin {
             display: flex;
             height: 35px;

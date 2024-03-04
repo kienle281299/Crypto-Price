@@ -13,7 +13,7 @@ html{
 body{
     font-family: Gill Sans;
 }
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 750px) { 
     .active {
         flex-direction: column;
         .box {
@@ -32,6 +32,27 @@ body{
             }
         }
     }
+    
+}
+@media screen and (max-width: 1160px) {
+    // .active {
+    //     flex-direction: column;
+    //     .box {
+    //         width: 50%;
+    //         &.link {
+    //             width: 50%;
+    //             .show {
+    //                 margin: 0;
+    //                 .look { 
+    //                     margin: 5px 5px 5px 5px; ;
+    //                     .show-link {
+    //                         height: 35px;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
     .contact {
         .form {
             display: flex;

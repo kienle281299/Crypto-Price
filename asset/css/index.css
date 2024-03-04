@@ -1,3 +1,35 @@
+.link {
+  width: 50%;
+  font-size: x-large;
+}
+.link .show {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5px;
+}
+.link .show .look {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 5px 5px 5px;
+  height: 35px;
+}
+.link .show .look .name {
+  font-size: 20px;
+  width: 200px;
+}
+.link .show .look .show-link {
+  border-style: solid;
+  background-color: rgba(72, 72, 84, 0.1019607843);
+  width: 100%;
+  height: 100%;
+  margin: 0px 10px 0px 5px;
+}
+.link .show .look i:hover {
+  cursor: pointer;
+}
+
 .search {
   width: 100%;
   background-color: white;
@@ -24,6 +56,9 @@
   width: 100%;
   background-color: white;
   display: none;
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 175px;
 }
 .search .list .listCoin {
   display: flex;
@@ -47,45 +82,49 @@
   width: 100%;
 }
 
-.show {
+.link {
+  width: 50%;
+  font-size: x-large;
+}
+.link .show {
   display: flex;
   flex-direction: column;
-  margin: 0px 100px 0px 100px;
   width: 100%;
-  height: 100%;
+  margin-top: 5px;
 }
-.show .look {
+.link .show .look {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 5px 130px 5px 5px;
+  margin: 5px 5px 5px 5px;
+  height: 35px;
 }
-.show .look .name {
+.link .show .look .name {
   font-size: 20px;
   width: 200px;
 }
-.show .look .show-link {
+.link .show .look .show-link {
   border-style: solid;
   background-color: rgba(72, 72, 84, 0.1019607843);
   width: 100%;
   height: 100%;
   margin: 0px 10px 0px 5px;
 }
-.show .look i:hover {
+.link .show .look i:hover {
   cursor: pointer;
 }
 
 .active {
   max-width: 100%;
   display: flex;
-  margin: 20px 5px 5px 5px;
+  margin: 10px 5px 5px 5px;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .active .box {
   display: flex;
   width: 50%;
-  align-items: flex-start;
-  font-size: x-large;
 }
 
 .direction {
@@ -162,7 +201,7 @@
   display: flex;
   flex-direction: column;
   max-width: 100%;
-  margin: 20px 50px 50px 50px;
+  margin: 10px 50px 50px 50px;
 }
 .container p {
   font-size: 18px;
@@ -187,7 +226,7 @@ body {
   font-family: Gill Sans;
 }
 
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 750px) {
   .active {
     flex-direction: column;
   }
@@ -206,6 +245,8 @@ body {
   .active .box.link .show .look .show-link {
     height: 35px;
   }
+}
+@media screen and (max-width: 1160px) {
   .contact .form {
     display: flex;
     flex-direction: column;
