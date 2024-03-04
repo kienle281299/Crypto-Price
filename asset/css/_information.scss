@@ -1,0 +1,15 @@
+.information {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    h1 {
+        text-align: center;
+        margin: 0;
+    }
+    .listinformation {
+        margin: auto;
+        font-size: 18px;
+    }
+
+}

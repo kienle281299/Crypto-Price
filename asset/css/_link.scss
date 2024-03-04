@@ -1,0 +1,33 @@
+.link { 
+    .show{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 100px 0px 100px;
+        width: 100%;
+        height: 100%;
+        .look {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 5px 130px 5px 5px;
+            .name {
+                font-size: 20px;
+                width: 200px;
+            }
+            .show-link {
+                border-style: solid;
+                background-color: #4848541a;
+                width: 100%;
+                height: 100%;
+                margin: 0px 10px 0px 5px;
+            }
+            i:hover {
+                cursor: pointer;
+            }
+            // &.excel{
+    
+            // }
+        }
+    }
+    
+}

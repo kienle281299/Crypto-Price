@@ -1,0 +1,17 @@
+@import'handle';
+@import'show';
+
+.active {
+    max-width: 100%;
+    display: flex;
+    margin: 20px 5px 5px 5px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .box {
+        display: flex;
+        width: 50%;
+        font-size: x-large;
+    }
+}

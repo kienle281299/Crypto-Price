@@ -1,0 +1,42 @@
+.contact {
+    max-width: 100%;
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+
+    h1 {
+        margin: 0;
+        text-align: center;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .invisible {
+            opacity: 0;
+        }
+        .donation {
+            display: flex;
+            align-items: baseline;
+
+            span {
+                font-size: 16px;
+            }
+
+            i {
+                font-size: x-large;
+                margin-left: 10px;
+            }
+            i:hover {
+                cursor: pointer;
+            }
+            
+        }
+        img {
+            width: 67px;
+            margin-left: 50px;
+        }
+    }
+}

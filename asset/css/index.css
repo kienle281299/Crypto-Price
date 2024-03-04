@@ -1,0 +1,229 @@
+.search {
+  width: 100%;
+  background-color: white;
+  margin: 5px 5px 0px 5px;
+  border-radius: 5px;
+  position: relative;
+}
+.search .form {
+  height: 35px;
+  font-size: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding-left: 10px;
+}
+.search .list {
+  margin-top: 5px;
+  border-radius: 5px;
+  border: solid;
+  border-color: #eeeeee;
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  display: none;
+}
+.search .list .listCoin {
+  display: flex;
+  height: 35px;
+  font-size: 17px;
+  border-bottom: inset;
+  list-style-type: none;
+  align-items: center;
+}
+.search .list .listCoin.bot {
+  border: none;
+}
+.search .list .listCoin a {
+  padding-left: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.handle {
+  display: flex;
+  width: 100%;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 100px 0px 100px;
+  width: 100%;
+  height: 100%;
+}
+.show .look {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 130px 5px 5px;
+}
+.show .look .name {
+  font-size: 20px;
+  width: 200px;
+}
+.show .look .show-link {
+  border-style: solid;
+  background-color: rgba(72, 72, 84, 0.1019607843);
+  width: 100%;
+  height: 100%;
+  margin: 0px 10px 0px 5px;
+}
+.show .look i:hover {
+  cursor: pointer;
+}
+
+.active {
+  max-width: 100%;
+  display: flex;
+  margin: 20px 5px 5px 5px;
+  justify-content: center;
+}
+.active .box {
+  display: flex;
+  width: 50%;
+  align-items: flex-start;
+  font-size: x-large;
+}
+
+.direction {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+.direction h1 {
+  text-align: center;
+  margin: 0;
+}
+.direction img {
+  margin-top: 10px;
+  width: 339px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.information {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+.information h1 {
+  text-align: center;
+  margin: 0;
+}
+.information .listinformation {
+  margin: auto;
+  font-size: 18px;
+}
+
+.contact {
+  max-width: 100%;
+  display: flex;
+  margin: 5px;
+  flex-direction: column;
+}
+.contact h1 {
+  margin: 0;
+  text-align: center;
+}
+.contact .form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.contact .form .invisible {
+  opacity: 0;
+}
+.contact .form .donation {
+  display: flex;
+  align-items: baseline;
+}
+.contact .form .donation span {
+  font-size: 16px;
+}
+.contact .form .donation i {
+  font-size: x-large;
+  margin-left: 10px;
+}
+.contact .form .donation i:hover {
+  cursor: pointer;
+}
+.contact .form img {
+  width: 67px;
+  margin-left: 50px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 20px 50px 50px 50px;
+}
+.container p {
+  font-size: 18px;
+  text-align: center;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+}
+
+body {
+  font-family: Gill Sans;
+}
+
+@media screen and (max-width: 1160px) {
+  .active {
+    flex-direction: column;
+  }
+  .active .box {
+    width: 100%;
+  }
+  .active .box.link {
+    width: 100%;
+  }
+  .active .box.link .show {
+    margin: 0;
+  }
+  .active .box.link .show .look {
+    margin: 5px 5px 5px 5px;
+  }
+  .active .box.link .show .look .show-link {
+    height: 35px;
+  }
+  .contact .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact .form .invisible {
+    display: none;
+  }
+  .contact .form .donation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact .form .donation i {
+    margin-top: 20px;
+    margin: 0;
+  }
+  .contact .form img {
+    margin: 0;
+    width: 199px;
+  }
+}/*# sourceMappingURL=index.css.map */

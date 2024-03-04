@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./asset/img/icon-web.png">
+    <link rel="stylesheet" href="./asset/css/index.css">
+    <link rel="stylesheet" href="./asset/js/index.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <title>Crypto_Price</title>
+</head>
+
+<body>
+    <div class="container">
+        <p>CoinPricer.live - FREE coin price to track your porfolio</p>
+        <div class="active">
+            <div class="box">
+                <div class="handle">
+                    <div class="search">
+                        <input class="form" type="text" id="myInput" onkeyup="setTimeout(myFunction, 3000);"
+                            placeholder="Coin name (bitcoin, btc)" title="Type in a name">
+                        <ul class="list" id="myUL">
+                            <li class="listCoin"><a href="#">BTC</a></li>
+                            <li class="listCoin"><a href="#">WING</a></li>
+                            <li class="listCoin"><a href="#">DOGE</a></li>
+                            <li class="listCoin"><a href="#">WLD</a></li>
+                            <li class="listCoin"><a href="#">PIXEL</a></li>
+                            <li class="listCoin"><a href="#">AI</a></li>
+                            <li class="listCoin bot"><a href="#">Cindy</a></li>
+                        </ul>
+                        <script>
+                            function myFunction() {
+                                var input, filter, ul, li, a, i, txtValue;
+                                input = document.getElementById("myInput");
+                                filter = input.value.toUpperCase();
+                                ul = document.getElementById("myUL");
+                                li = ul.getElementsByTagName("li");
+                                for (i = 0; i < li.length; i++) {
+                                    a = li[i].getElementsByTagName("a")[0];
+                                    txtValue = a.textContent || a.innerText;
+                                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                        li[i].style.display = "";
+                                    } else {
+                                        li[i].style.display = "none";
+                                    }
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="box link">
+                <div class="show">
+                    <div class="look">
+                        <div class="name">Googlesheet</div>
+                        <span class="show-link"></span>
+                        <i class=" icon fa-solid fa-copy"></i>
+                    </div>
+                    <div class="look excel">
+                        <div class="name">Excel</div>
+                        <span class="show-link"></span>
+                        <i class="icon fa-solid fa-copy"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="direction">
+            <h1>Demo / PoC Spreadsheet</h1>
+            <p>You can see an example spreadsheet on <a
+                    href="https://docs.google.com/spreadsheets/d/1cVhpcvJOBT5UtdfPDGauK1fiwAYfOxTn_n55gYx9AQc/edit?usp=sharing"
+                    target="_blank">this google sheet link</a> </p>
+            <img src="./asset/img/information.jpg" alt="">
+        </div>
+        <div class="information">
+            <h1>Key features:</h1>
+            <ul class="listinformation">
+                <li>FREE Simple API, easy to use.</li>
+                <li>No Parsing: all endpoints return only coin price in number</li>
+                <li>No limits: there's no usage limits</li>
+                <li> No sign ups: anonymous, no setup</li>
+                <li>Support all coins on Coinmarketcap</li>
+            </ul>
+
+        </div>
+        <div class="contact">
+            <h1>Contact: hi@coinpricer.live</h1> 
+            <div class="form">
+            <img class="invisible" src="./asset/img/QRcode.jpg" alt="">
+                <div class="textform">      
+                    <p>Donation USDT bep20</p>
+                    <div class="donation">
+                        <span>0x3201210e777Db8e4c4CE67325eE4D357241CaD91</span>
+                        <i class="icon fa-solid fa-copy"></i>
+                    </div>
+                </div>
+                <img src="./asset/img/QRcode.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
